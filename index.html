@@ -75,16 +75,18 @@
   .exercise-box { background: #f0f8ff; padding: 15px; border-radius: 8px; margin: 12px 0; border-left: 4px solid var(--accent2); }
   
   footer { margin-top: 25px; padding-top: 15px; border-top: 1px solid var(--border); color: var(--muted); font-size: 11px; text-align: center; }
+  .emails { margin-top: 8px; font-weight: 600; color: var(--accent); }
 
   /* Style d'impression */
   @media print {
-    body { background: white !important; font-size: 11px !important; }
+    body { background: white !important; font-size: 10.5px !important; }
     .toolbar, .no-print { display: none !important; }
     .wrap { margin: 0 !important; padding: 0 !important; max-width: 100% !important; }
     .page { border: none !important; box-shadow: none !important; padding: 0 !important; }
     header.top img { width: 80px !important; }
     .pillar-grid { grid-template-columns: 1fr 1fr !important; gap: 10px !important; }
     .pillar-item { padding: 10px !important; }
+    footer { margin-top: 15px !important; }
   }
 </style>
 </head>
@@ -174,8 +176,11 @@
     </div>
 
     <footer>
-      <div><strong>Espace Francilien du Rachis</strong> — Chirurgie d'excellence du rachis et des nerfs périphériques</div>
-      <div>95, rue de Prony, 75017 Paris | 01.XX.XX.XX.XX | www.rachis.paris</div>
+      <div><strong>Espace Francilien du Rachis</strong> — 95, rue de Prony, 75017 Paris</div>
+      <div class="emails">
+        dr.jameson@rachis.paris • dr.mlamerain@gmail.com • dr.ctravert@gmail.com
+      </div>
+      <div style="margin-top: 5px;">www.rachis.paris</div>
     </footer>
   </div>
 </div>
